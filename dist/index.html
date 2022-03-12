@@ -6,13 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>皮卡丘</title>
-    <link rel="stylesheet" href="/index.e527a43c.css">
+
 </head>
-<script src="/index.83a47238.js"></script>
 
 <body>
-    <div class="demo"></div>
-    <div class="dome2"></div>
+    <style id="demo"></style>
+    <div id="demo2"></div>
+    <div id="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢放</button>
+        <button id="btnNormal">正常</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        #buttons {
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        #buttons>button {
+            margin-top: 10px;
+            padding: 4px 8px;
+        }
+
+        #demo {
+            display: none;
+        }
+
+        #demo2 {
+            font-family: "Times New Roman";
+            position: fixed;
+            height: 50vh;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow-y: auto;
+            margin-left: 25px;
+        }
+
+        #demo2::-webkit-scrollbar {
+            display: none;
+        }
+
+        html {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50vh;
+        }
+    
+</style>
     <div class="skin">
         <div class="eye left"></div>
         <div class="eye right"></div>
@@ -33,6 +93,8 @@
             </div>
         </div>
     </div>
+    <script src="/index.83a47238.js"></script>
 </body>
+
 
 </html>
